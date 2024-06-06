@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <title>Portfolio</title>
+  <meta name="description" content="Wowfolio - A Simple & Clean Portfolio Template For Developers" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__logo-container">
+      <div class="main-header__logo-img-cont">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="logo Image" class="main-header__logo-img" />
+      </div>
+      <h4 class="main-header__logo-text">Sai Akshar Nivas</h4>
+    </div>
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-links">
+        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
+        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#projects"> Projects </a>
+        </li>
+        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+      </ul>
+    </nav>
+    <div class="main-header__sm-scr-nav-btn">
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+    </div>
+    <div class="main-header__sm-menu">
+      <div class="main-header__sm-menu-close">
+
+      </div>
+      <ul class="main-header__sm-menu-links">
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+        </li>
+
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
+  </header>
+
+  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
+  <div class="themeClrSelector">
+    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
+    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
+      class="themeClrSelector__img" />
+  </div>
+  <!---->
+
+  <section id="home-hero" class="home-hero">
+    <div class="home-hero__content">
+      <div class="home-hero__info">
+        <h1 class="heading-primary home-hero__heading-primary">
+          <span class="heading-primary__sm"> Hello 👋</span>
+          <span class="heading-primary__main">
+            Hi Guy's I am Sai Akshar Nivas and I would like to enjoy my college life 
+          </span>
+        </h1>
+        <button class="btn btn-theme home-hero__btn-theme">Projects</button>
+        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> About </span>
+        <span class="heading-secondary__main" br>
+          Here you will find more information about me, what I do, and list of my current skills in programming
+      </h2>
+      <div class="main-section__content">
+        <div class="about__info">
+          <div class="about__main-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Story
+            </h3>
+            <p class="text-primary about__text-primary">
+              <span>
+                I am Sai Akshar Nivas, I am a student pursuing Bachelor of Technology in Computer Science and Engineering 
+                Student with a specialization in Artificial Intelligence and Machine Learning.I am currently studing 3rd year. 
+                I enjoy turning complex problems into simple, beautiful and intuitive designs.
+              </span>
+              <span>
+                I build websites so that it is functional and user-friendly but at the same time attractive.
+                Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+                across your message and identity in the most creative way.
+              </span>
+              <span>
+                Not only websites i also worked on many projects in machine learing like Flipkart sentimental analysis 
+                with SVM and Random forest,Web Scrapping from amazon.com for product recommendations.
+              </span>
+
+            </p>
+            <button class="btn btn-theme about__btn-theme">Projects</button>
+          </div>
+          <div class="about__skill-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Skills
+            </h3>
+            <ul class="about__skills">
+              <li class="about__skill">html</li>
+              <li class="about__skill">css</li>
+              <li class="about__skill">javascript</li>
+              <li class="about__skill">Java</li>
+              <li class="about__skill">C</li>
+              <li class="about__skill">C++</li>
+              <li class="about__skill">SQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills-showcase">
+    <ul class="skills-showcase__list">
+      <li class="skills-showcase__list-item">
+        <i class="devicon-html5-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-css3-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-javascript-plain"></i>
+      </li>
+    </ul>
+  </section>
+  <section id="projects" class="projects main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> Projects 🛠️</span>
+        <span class="heading-secondary__main">
+          Here you will find some of the personal and clients projects that I created with the project details
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="projects__list">
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 1 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="https://th.bing.com/th/id/OIP.D1WGfYiHgTxvEWxiafsPEwHaDt?rs=1&pid=ImgDetMain" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Scraping Amazon's data can be challenging due to their anti-scraping 
+                  measures and strict terms of service. It's essential to respect their robots.
+                  txt file, use APIs where available, rotate proxies and user agents to avoid 
+                  detection, and scrape responsibly to avoid IP blocking. 
+                  Be aware of legal implications and ensure compliance with 
+                  Amazon's terms to avoid potential legal consequences.
+                </span>
+                <!-- <br />
+                  <br /> -->
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="C:\Users\bilvi\Downloads\Screenshot_6-4-2024_82617_.jpeg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  The tourism website project aims to showcase diverse destinations,
+                  attractions, and activities for travelers. Utilizing interactive maps
+                  and multimedia content, it offers an immersive exploration experience.
+                  Integrated booking functionalities facilitate seamless travel planning
+                  and reservations. Emphasizing user engagement and accessibility,
+                  the website prioritizes responsive design and intuitive navigation.
+                  Through strategic marketing and SEO, it aims to attract and retain a 
+                  global audience, promoting tourism sustainably.
+                </span>
+                <!-- <br />
+                  <br /> -->
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 2 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 3 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/09/22153728/iStock-1203763961.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Credit card fraud detection involves employing 
+                  machine learning algorithms to analyze transaction data 
+                  and identify potentially fraudulent activities. 
+                  Utilizing features such as transaction amount, 
+                  location, time, and frequency, the system learns 
+                  patterns indicative of fraudulent behavior.
+                  Supervised learning models like logistic regression,
+                  decision trees, or neural networks are trained on 
+                  labeled datasets containing both fraudulent and legitimate transactions
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="https://aihubprojects.com/wp-content/uploads/2019/10/image-6.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  A movie recommendation system employs collaborative filtering and
+                  content-based filtering techniques to suggest films based on
+                  user preferences and movie characteristics. It analyzes user
+                  ratings, viewing history, and demographic data to generate
+                  personalized recommendations. Utilizing machine learning algorithms 
+                  such as matrix factorization or neural networks, the system continuously 
+                  improves its accuracy. Additionally, hybrid approaches combining collaborative 
+                  and content-based methods enhance recommendation quality. Integration with 
+                  streaming platforms and social media further enriches user experience,
+                  fostering engagement and satisfaction.
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 4 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary">
+        <span class="heading-secondary__sm"> Contact 📞</span>
+        <span class="heading-secondary__main">
+          Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="contact__form-cont">
+          <form class="contact__form">
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Name</label>
+              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Email</label>
+              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Message</label>
+              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
+                class="contact__form-field-input"></textarea>
+            </div>
+            <button type="submit" class="contact__form-submit">Submit</button>
+          </form>
+          <div class="contact__form-visual"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-footer__upper">
+      <div class="main-container">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#projects">Projects</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="main-footer__mid-line"></div>
+        <div class="main-footer__socials">
+          <a href="#" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-instagram-48.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-twitter-50.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-pinterest-64.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer__bottom">
+      <div class="main-container">
+        <p class="main-footer__bottom-txt">
+          <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
+          <a target="_blank" href="https://github.com/rammcodes/wowfolio">Portfolio</a> Open-Source Template
+          <script>document.write(new Date().getFullYear())</script>. Made by
+          <a target="_blank" href="https://rammaheshwari.com">Sai Akshar Nivas</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
